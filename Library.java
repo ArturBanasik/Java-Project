@@ -5,22 +5,21 @@ public class Library {
 	final String appName = "Library v0.2";
 
 
-	Book bookObject = new Book();
+	Book book1 = new Book("W pustyni i w puszczy", "Henryk Sienkiewicz", 2010, 296, "Greg",
+				"9788373271890");
 
-	bookObject.title = "Thinking In Java";
-	bookObject.author = "Bruce Eckel";
-	bookObject.releaseDate = 2010;
-	bookObject.pages = 1213;
-	bookObject.publisher = "Helion";
-	bookObject.isbn = "9788328334427";
+		Book book2 = new Book("Java. Efektywne programowanie. Wydanie II", "Joshua Bloch", 2009,
+				352, "Helion", "9788324620845");
 
-	System.out.println(appName);
-	System.out.println("Books in the library: ");
-	System.out.println(bookObject.title);
-	System.out.println(bookObject.author);
-	System.out.println(bookObject.releaseDate);
-	System.out.println(bookObject.pages);
-	System.out.println(bookObject.publisher);
-	System.out.println(bookObject.isbn);
+		Book book3 = new Book("SCJP Sun Certified Programmer for Java 6 Study Guide",
+				"Bert Bates, Katherine Sierra", 2008, 851, "McGraw-Hill Osborne Media",
+				"9780071591065");
+
+	System.out.println(appName);	
+	System.out.println("Books in the Library: ");
+	book1.printInfo();
+	book2.printInfo();
+	book3.printInfo();
+
 	}
 }
