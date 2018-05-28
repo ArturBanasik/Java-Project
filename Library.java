@@ -1,8 +1,9 @@
+
 public class Library {
 
 	public static void main (String[] args){
 
-	final String appName = "Library v0.2";
+	final String appName = "Library v0.4";
 
 
 	Book book1 = new Book("W pustyni i w puszczy", "Henryk Sienkiewicz", 2010, 296, "Greg",
